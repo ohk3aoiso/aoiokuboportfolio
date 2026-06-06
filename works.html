@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WORKS | AOI OKUBO PORTFOLIO</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    /* ===== WORKS Page Specific ===== */
+    .works-section {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 40px 40px 120px;
+    }
+
+    .works-title-wrapper {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    /* グリッドレイアウト */
+    .works-grid {
+      display: grid;
+      /* 1つのカードの最小幅を300pxにし、画面に収まらない場合は自動で1列になります */
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 24px;
+    }
+
+    /* murmur は他カードと同サイズで中央配置 */
+    .work-card.center {
+      grid-column: 1 / -1;
+      width: calc(50% - 12px);
+      margin: 0 auto;
+    }
+
+    /* カード本体 */
+    .work-card {
+      border-radius: 16px;
+      overflow: hidden;
+      cursor: pointer;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      position: relative;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.18);
+    }
+
+    .work-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+    }
+
+    .work-card img {
+      width: 100%;
+      display: block;
+      aspect-ratio: 4 / 3;
+      object-fit: cover;
+    }
+
+    @media (max-width: 640px) {
+      .works-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .work-card.center {
+        width: 100%;
+      }
+
+      .works-section {
+        padding: 60px 24px 80px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <a href="index.html" class="logo">AOI OKUBO</a>
+    <nav>
+      <a href="index.html">TOP</a>
+      <a href="about.html">ABOUT</a>
+      <a href="works.html" class="active">WORKS</a>
+      <a href="contact.html">CONTACT</a>
+    </nav>
+    <button class="hamburger" id="hamburger" aria-label="メニューを開く">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <nav class="mobile-nav" id="mobile-nav">
+    <button class="mobile-nav-close" id="mobile-nav-close" aria-label="閉じる">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round">
+        <line x1="4" y1="4" x2="20" y2="20"/><line x1="20" y1="4" x2="4" y2="20"/>
+      </svg>
+    </button>
+    <a href="index.html">TOP</a>
+    <a href="about.html">ABOUT</a>
+    <a href="works.html" class="active">WORKS</a>
+    <a href="contact.html">CONTACT</a>
+  </nav>
+
+  <div class="page-wrapper">
+    <section class="works-section">
+
+      <div class="works-title-wrapper">
+        <h1 class="section-title">WORKS</h1>
+      </div>
+
+      <div class="works-grid">
+
+        <!-- SKIN. -->
+        <div class="work-card card-skin fade-in">
+          <img src="images/サムネ.png" alt="SKIN.">
+        </div>
+
+        <!-- 出張申請SaaS -->
+        <div class="work-card card-saas fade-in">
+          <img src="images/Frame 17.png" alt="出張申請SaaS">
+        </div>
+
+        <!-- murmur（中央1カラム） -->
+        <div class="work-card card-murmur center fade-in">
+          <img src="images/Frame 18.png" alt="murmur">
+        </div>
+
+        <!-- キカザレ Kikazary -->
+        <div class="work-card card-kikazary fade-in">
+          <img src="images/Frame 16.png" alt="キカザレ Kikazary">
+        </div>
+
+        <!-- レシピック -->
+        <div class="work-card card-recipe fade-in">
+          <img src="images/Frame 14.png" alt="レシピック">
+        </div>
+
+      </div>
+    </section>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

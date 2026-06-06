@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ABOUT | AOI OKUBO PORTFOLIO</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    /* ===== ABOUT Page Specific ===== */
+    .about-section {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 80px 40px 100px;
+    }
+
+    .about-title-wrapper {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .about-photo {
+      width: 480px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 16px;
+      margin: 0 auto 40px;
+      display: block;
+    }
+
+    .about-photo-placeholder {
+      width: 400px;
+      height: 200px;
+      background-color: #e8e8e8;
+      border-radius: 16px;
+      margin: 0 auto 40px;
+    }
+
+    .about-text {
+      font-size: 14px;
+      line-height: 1.6;
+      color: #333333;
+      margin-bottom: 20px;
+    }
+
+    .about-quote {
+      text-align: center;
+      font-family: 'Noto Sans JP', sans-serif;
+      font-size: 20px;
+      font-weight: 300;
+      letter-spacing: 0.02em;
+      margin: 32px 0 32px;
+      color: #1a1a1a;
+    }
+
+    @media (max-width: 600px) {
+      .about-section {
+        padding: 60px 24px 80px;
+      }
+
+      .about-photo {
+        width: 100%;
+        height: 220px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <a href="index.html" class="logo">AOI OKUBO</a>
+    <nav>
+      <a href="index.html">TOP</a>
+      <a href="about.html" class="active">ABOUT</a>
+      <a href="works.html">WORKS</a>
+      <a href="contact.html">CONTACT</a>
+    </nav>
+    <button class="hamburger" id="hamburger" aria-label="メニューを開く">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <nav class="mobile-nav" id="mobile-nav">
+    <button class="mobile-nav-close" id="mobile-nav-close" aria-label="閉じる">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round">
+        <line x1="4" y1="4" x2="20" y2="20"/><line x1="20" y1="4" x2="4" y2="20"/>
+      </svg>
+    </button>
+    <a href="index.html">TOP</a>
+    <a href="about.html" class="active">ABOUT</a>
+    <a href="works.html">WORKS</a>
+    <a href="contact.html">CONTACT</a>
+  </nav>
+
+  <div class="page-wrapper">
+    <section class="about-section">
+
+      <div class="about-title-wrapper">
+        <h1 class="section-title">ABOUT</h1>
+      </div>
+
+      <img
+        src="images/Mask group.png"
+        alt="大久保 葵"
+        class="about-photo fade-in"
+      >
+
+      <p class="about-text fade-in">
+        こんにちは、大久保 葵です。<br>
+        私はこれまで看護師として、患者さん一人ひとりと向き合い、ケアを通じて喜んでもらうことに大きなやりがいを感じてきました。
+      </p>
+
+      <p class="about-text fade-in">
+        安定した職として選んだ看護師の仕事は誇りあるものでしたが、心のどこかで「生涯をかけて、自分を突き動かすようなワクワクすることに挑戦したい」という想いが消えませんでした。もともとデザインやアートに触れることが大好きだったこともあり、その情熱の矛先は自然とデザインの世界へ向かっていきました。
+      </p>
+
+      <p class="about-text fade-in">
+        看護の現場で、相手が何を求めているかを考え抜いてきた経験は、今の私のデザインの根底にあります。
+      </p>
+
+      <p class="about-quote fade-in">「ユーザーに考えさせない」</p>
+
+      <p class="about-text fade-in">
+        この言葉を軸に、ストレスのない、人が不幸にならないサービスを追求していきたいと考えています。<br>
+        日本はデザイン大国ですが、まだ見ぬ改善の種は至るところに眠っています。それらを拾い上げ、アイデアが尽きるまで練り上げ、形にする。<br>
+        デザインという新しい手段で、より多くのユーザーに喜びを届けていくことが、今の私の目標です。
+      </p>
+
+    </section>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
