@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CONTACT | AOI OKUBO PORTFOLIO</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400&display=swap">
+  <style>
+    /* ===== CONTACT Page Specific ===== */
+    .contact-wrapper {
+      min-height: calc(100vh - 80px);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .contact-section {
+      text-align: center;
+      padding: 80px 40px 60px;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .contact-title-wrapper {
+      margin-bottom: 40px;
+    }
+
+    .contact-lead {
+      font-size: 14px;
+      color: #333333;
+      margin-bottom: 12px;
+      letter-spacing: 0.05em;
+    }
+
+    .contact-email {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-family: 'Inter', sans-serif;
+      font-weight: 300;
+      font-size: 15px;
+      letter-spacing: 0.08em;
+      text-transform: none;
+      color: #333333;
+      border-bottom: 1px solid transparent;
+      transition: border-color 0.25s ease, color 0.25s ease;
+      padding-bottom: 2px;
+    }
+
+    .contact-email:hover {
+      border-color: #333333;
+      color: #555;
+      opacity: 0.5
+    }
+
+    .contact-email svg {
+      width: 14px;
+      height: 14px;
+      flex-shrink: 0;
+      opacity: 0.6;
+    }
+
+    /* ===== Footer ===== */
+    .site-footer {
+      text-align: center;
+      padding: 32px 20px 40px;
+    }
+
+    .footer-copy {
+      font-family: 'Josefin Sans', sans-serif;
+      font-weight: 300;
+      font-size: 10px;
+      letter-spacing: 0.15em;
+      color: #aaa;
+      margin-bottom: 20px;
+    }
+
+    .footer-social {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 24px;
+    }
+
+    .footer-social a {
+      display: flex;
+      align-items: center;
+      transition: opacity 0.2s ease;
+    }
+
+    .footer-social a:hover {
+      opacity: 0.5;
+    }
+
+    .footer-social img {
+      display: block;
+    }
+
+    .footer-social img.icon-x {
+      width: 20px;
+      height: 20px;
+    }
+
+    .footer-social img.icon-note {
+      width: 20px;
+      height: 20px;
+    }
+
+    @media (max-width: 600px) {
+      .contact-section {
+        padding: 60px 24px 40px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <a href="index.html" class="logo">AOI OKUBO</a>
+    <nav>
+      <a href="index.html">TOP</a>
+      <a href="about.html">ABOUT</a>
+      <a href="works.html">WORKS</a>
+      <a href="contact.html" class="active">CONTACT</a>
+    </nav>
+    <button class="hamburger" id="hamburger" aria-label="メニューを開く">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <nav class="mobile-nav" id="mobile-nav">
+    <button class="mobile-nav-close" id="mobile-nav-close" aria-label="閉じる">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round">
+        <line x1="4" y1="4" x2="20" y2="20"/><line x1="20" y1="4" x2="4" y2="20"/>
+      </svg>
+    </button>
+    <a href="index.html">TOP</a>
+    <a href="about.html">ABOUT</a>
+    <a href="works.html">WORKS</a>
+    <a href="contact.html" class="active">CONTACT</a>
+  </nav>
+
+  <div class="page-wrapper contact-wrapper">
+
+    <section class="contact-section">
+      <div class="contact-title-wrapper">
+        <h1 class="section-title fade-in">CONTACT</h1>
+      </div>
+
+      <p class="contact-lead fade-in">ご連絡はこちらにお願いいたします。</p>
+
+      <a
+        href="mailto:o.hollyhockaois@gmail.com"
+        class="contact-email fade-in"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        o.hollyhockaois@gmail.com
+        <!-- 外部リンクアイコン -->
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+          <polyline points="15 3 21 3 21 9"/>
+          <line x1="10" y1="14" x2="21" y2="3"/>
+        </svg>
+      </a>
+    </section>
+
+    <footer class="site-footer">
+      <p class="footer-copy fade-in">©2026, AOI OKUBO PORTFOLIO.</p>
+      <div class="footer-social fade-in">
+
+        <!-- X (Twitter) -->
+        <a
+          href="https://x.com/nitaitn"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="X (Twitter)"
+        >
+          <img src="images/x-logo.svg" alt="" class="icon-x">
+        </a>
+
+        <!-- note -->
+        <a
+          href="https://note.com/cool_crocus1796"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="note"
+        >
+          <img src="images/note-icon.svg" alt="" class="icon-note">
+        </a>
+
+      </div>
+    </footer>
+
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
